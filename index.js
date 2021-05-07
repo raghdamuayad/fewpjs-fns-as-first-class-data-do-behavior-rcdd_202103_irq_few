@@ -1,7 +1,7 @@
 /* Given Code, don't edit */
 
-function greet(timeStr){
-  let nowTime = timeStr.split(':');
+function greet(timeAll){
+  let nowTime = timeAll.split(':');
   let nowHour = parseInt(nowTime[0]);
   if (nowHour<12){
     return "Good Morning";
@@ -10,6 +10,6 @@ function greet(timeStr){
   }
   return "Good Afternoon";
 }
-function displayMessage(msg){
-  document.getElementById("greeting").innerText = msg;
+function displayMessage(Message){
+  document.getElementById("greeting").innerText = Message;
 }
